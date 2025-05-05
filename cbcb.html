@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Variabel warna default */
+        :root {
+            --bg-color: #1a202c; /* default dark background */
+            --primary-color: #e53e3e; /* default red */
+            --secondary-color: #f7fafc; /* white */
+        }
+
+        /* Tema Biru */
+        .theme-blue {
+            --bg-color: #3182ce; /* blue background */
+            --primary-color: #63b3ed; /* light blue primary color */
+            --secondary-color: #ffffff; /* white text */
+        }
+
+        /* Menggunakan variabel CSS untuk elemen-elemen */
+        body {
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--secondary-color);
+        }
+
+        /* Untuk navbar teks */
+        nav .text-white {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="theme-blue"> <!-- Gunakan kelas theme-blue untuk tema biru -->
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-5">
+        <div class="flex space-x-4 text-sm sm:text-base">
+            <a href="#hero" class="text-white transition duration-300">Home</a>
+            <a href="#event" class="text-white transition duration-300">Event</a>
+            <a href="#" class="text-white transition duration-300">Schedule</a>
+        </div>
+
+        <!-- Logo dan Teks Tengah -->
+        <div class="hidden md:flex items-center space-x-2">
+            <img src="images/logo-removebg-preview (1).png" alt="Logo" class="w-10 h-10 transform -scale-x-100" />
+            <p class="text-white font-bold text-xl">Ticketin</p>
+        </div>
+
+        <div class="text-sm sm:text-base">
+            <a href="#" class="text-white">Get Ticket</a>
+        </div>
+    </nav>
+    
+    <!-- Tombol untuk mengganti tema (Optional) -->
+    <div class="flex justify-center space-x-4 p-5">
+        <button onclick="changeTheme('theme-blue')" class="text-white bg-blue-500 p-2 rounded">Blue Theme</button>
+    </div>
+    
+    <!-- Main Content with image beside -->
+    <div id="hero" class="flex flex-col md:flex-row items-center justify-between text-white mt-20 p-4 space-y-10 md:space-y-0 pt-0 pb-50">
+        <!-- Left: Text Section -->
+        <div class="md:w-1/2">
+            <p class="font-bold bg-red-950 text-white inline-block px-4 py-2 rounded-md mb-4">
+                Secure your 1D concert ticket!
+            </p>    
+            <h2 class="text-4xl font-bold mb-4"><span class="text-red-950">One Direction</span> is back!  <br>
+                Be there to relieve the <span class="text-red-950">magic</span></h2>
+            <p class="mb-4">Don't wait - tickets are selling fast! Grab yours now!</p>
+
+            <!-- Countdown Timer -->
+            <div class="flex space-x-6 mb-6">
+                <div class="bg-white text-center p-4 rounded">
+                    <span class="block text-xl font-bold text-gray-800">13</span>
+                    <span class="text-gray-600">Days</span>
+                </div>
+                <div class="bg-white text-center p-4 rounded">
+                    <span class="block text-xl font-bold text-gray-800">07</span>
+                    <span class="text-gray-600">Hours</span>
+                </div>
+                <div class="bg-white text-center p-4 rounded">
+                    <span class="block text-xl font-bold text-gray-800">47</span>
+                    <span class="text-gray-600">Minutes</span>
+                </div>
+                <div class="bg-white text-center p-4 rounded">
+                    <span class="block text-xl font-bold text-gray-800">24</span>
+                    <span class="text-gray-600">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="space-x-4">
+                <button class="bg-red-950 text-white px-6 py-3 rounded shadow-md hover:bg-red-700">Get Ticket</button>
+                <button class="bg-white text-red-950 px-6 py-3 rounded shadow-md hover:bg-red-100">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Right: Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <img src="images/1_g8eVfMMFSDebkmswrlLkbA-removebg-preview (2).png" alt="One Direction" class="w-[900px]">
+        </div>
+    </div>
+
+    <!-- Event Section -->
+    <div id="event" class="container mx-auto p-10">
+        <h1 class="text-center text-3xl font-bold mb-10 text-white">Event</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-5">
+                <img src="images/1d 1.jpg" alt="What Makes You Beautiful" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+                <h2 class="text-xl font-bold text-center">What Makes You Beautiful (Single, 2011)</h2>
+                <p>The anthem of a generation.</p>
+                <p class="text-gray-600 text-center">The song that made everyone believe in magic. "What Makes You Beautiful" made everyone feel seen and loved.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-5">
+                <img src="images/1d 3.jpg" alt="Take Me Home" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+                <h2 class="text-xl font-bold text-center">Take Me Home (2012)</h2>
+                <p>"Classier, funnier, and even more heartfelt."</p>
+                <p class="text-gray-600 text-center">This year marked how One Direction matured—seriously, us, with deeper themes and lighter narratives. Tracks like "Little Things" remind us how young and cute we were.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-5">
+                <img src="images/1d 2.jpg" alt="Up All Night" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+                <h2 class="text-xl font-bold text-center">Up All Night (2011)</h2>
+                <p>"The debut that started it all."</p>
+                <p class="text-gray-600 text-center">Romance with high energy—and together it backs up to the beginning of a phenomenon. Setting the stage for the boys' global takeover.</p>
+            </div>                    
+        </div>
+    </div>
+
+    <script>
+        function changeTheme(themeName) {
+            document.documentElement.classList.remove('theme-blue');
+            document.documentElement.classList.add(themeName);
+        }
+    </script>
+
+</body>
+</html>

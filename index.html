@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticketin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-gradient-to-br from-rose-800 to-red-950 px-4">
+
+  <!-- Navigation Bar -->
+<nav class="flex items-center justify-between p-5">
+    <!-- Kiri -->
+    <div class="flex space-x-4 text-sm sm:text-base">
+      <a href="#hero" class="text-white transition duration-300">Home</a>
+      <a href="#event" class="text-white transition duration-300">Event</a>
+      <a href="#tour" class="text-white transition duration-300">Schedule</a>
+    </div>
+  
+    <!-- Tengah: Logo + Text -->
+    <!-- Tengah: Logo + Ticketin, hanya tampil di layar md ke atas -->
+<div class="hidden md:flex items-center space-x-2">
+    <img src="images/logo-removebg-preview (1).png" alt="Logo" class="w-10 h-10 transform -scale-x-100" />
+    <p class="text-white font-bold text-xl">Ticketin</p>
+  </div>
+  
+  
+    <!-- Kanan -->
+    <div class="text-sm sm:text-base">
+      <a href="#ticket" class="text-white">Get Ticket</a>
+    </div>
+  </nav>
+  <hr class="border-white">
+  
+
+  <!-- Hero Section -->
+  <div id="hero" class="flex flex-col md:flex-row items-center justify-between text-white mt-20 gap-10 p-4">
+    <!-- Text -->
+    <div class="md:w-1/2">
+      <p class="font-bold bg-red-950 text-white inline-block px-4 py-2 rounded-md mb-4">
+        Secure your 1D concert ticket!
+      </p>    
+      <h2 class="text-4xl font-bold mb-4">
+        <span class="text-red-950">One Direction</span> is back! <br>
+        Be there to relieve the <span class="text-red-950">magic</span>
+      </h2>
+      <p class="mb-4">Don't wait - tickets are selling fast! Grab yours now!</p>
+
+      <!-- Countdown -->
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="bg-white text-center p-4 rounded w-20">
+          <span class="block text-xl font-bold text-gray-800">13</span>
+          <span class="text-gray-600 text-sm">Days</span>
+        </div>
+        <div class="bg-white text-center p-4 rounded w-20">
+          <span class="block text-xl font-bold text-gray-800">07</span>
+          <span class="text-gray-600 text-sm">Hours</span>
+        </div>
+        <div class="bg-white text-center p-4 rounded w-20">
+          <span class="block text-xl font-bold text-gray-800">47</span>
+          <span class="text-gray-600 text-sm">Minutes</span>
+        </div>
+        <div class="bg-white text-center p-4 rounded w-20">
+          <span class="block text-xl font-bold text-gray-800">24</span>
+          <span class="text-gray-600 text-sm">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="space-x-4">
+        <button class="bg-red-950 text-white px-6 py-3 rounded shadow-md hover:bg-red-700">Get Ticket</button>
+        <button class="bg-white text-red-950 px-6 py-3 rounded shadow-md hover:bg-red-100">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="images/1_g8eVfMMFSDebkmswrlLkbA-removebg-preview (2).png" alt="One Direction" class="max-w-full md:max-w-xl">
+    </div>
+  </div>
+
+  <!-- Event Section -->
+  <div id="event" class="container mx-auto p-6 sm:p-10">
+    <h1 class="text-center text-3xl font-bold mb-10 text-white">Event</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <img src="images/1d 1.jpg" alt="What Makes You Beautiful" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+        <h2 class="text-xl font-bold text-center">What Makes You Beautiful (Single, 2011)</h2>
+        <p>The anthem of a generation.</p>
+        <p class="text-gray-600 text-center">The song that made everyone believe in magic. "What Makes You Beautiful" made everyone feel seen and loved.</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <img src="images/1d 3.jpg" alt="Take Me Home" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+        <h2 class="text-xl font-bold text-center">Take Me Home (2012)</h2>
+        <p>"Classier, funnier, and even more heartfelt."</p>
+        <p class="text-gray-600 text-center">This year marked how One Direction matured—seriously, us, with deeper themes and lighter narratives. Tracks like "Little Things" remind us how young and cute we were.</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <img src="images/1d 2.jpg" alt="Up All Night" class="rounded-lg mb-4 block mx-auto max-w-[200px]">
+        <h2 class="text-xl font-bold text-center">Up All Night (2011)</h2>
+        <p>"The debut that started it all."</p>
+        <p class="text-gray-600 text-center">Romance with high energy—and together it backs up to the beginning of a phenomenon. Setting the stage for the boys' global takeover.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--tour-->
+    <!-- Link to Google Fonts for Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<div id="tour" class="container mx-auto p-6 bg-red-950 rounded-lg">
+    <!-- Title -->
+    <h1 class="text-white text-3xl text-center font-bold mb-6 font-montserrat">Tour Schedule</h1>
+    
+    <!-- Grid layout for text and images -->
+    <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        <!-- Text Section -->
+        <ul class="text-white space-y-3 font-montserrat md:w-1/2">
+            <li>May 3: London, UK - O2 Arena</li>
+            <li>May 5: Manchester, UK - Manchester Arena</li>
+            <li>May 7: Birmingham, UK - Resorts World Arena</li>
+            <li>May 9: Glasgow, Scotland - SSE Hydro</li>
+            <li>May 11: Dublin, Ireland - 3Arena</li>
+            <li>May 13: Paris, France - Accor Arena</li>
+            <li>May 15: Berlin, Germany - Mercedes-Benz Arena</li>
+        </ul>
+        
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <div class="flex flex-col space-y-6">
+                <!-- First Image -->
+                <img src="images/id tour.webp" alt="Tour Image 1" class="max-w-xs w-full h-auto object-cover rounded-lg shadow-lg">
+                
+                <!-- Second Image -->
+                <img src="images/id tour 2.webp" alt="Tour Image 2" class="max-w-xs w-full h-auto object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ticket-->
+<div id="ticket" class="bg-cover bg-center bg-no-repeat h-screen rounded-lg m-10" style="background-image: url('images/one-direction-2014-1000x600.avif');">
+    <h1 class="font-bold text-white text-6xl pl-10 pt-6">Get Ticket</h1>
+  
+    <div class="container mx-auto px-4 py-8 bg-red-950 rounded-lg mt-6 max-w-6xl max-h-[80vh] overflow-y-auto flex flex-col lg:flex-row items-center">
+      <!-- Gambar - ukuran diperbesar -->
+      <img src="images/HbM0Z17-removebg-preview (1).png" alt="cat" class="w-44 lg:w-56 rounded-lg mb-4 lg:mb-0 mr-0 lg:mr-6"/>
+  
+      <!-- Teks -->
+      <div class="text-white text-sm leading-relaxed pl-8 lg:pl-20">
+        <p>
+          <strong>One Direction World Tour 2025 – Ticket Categories & Prices</strong><br><br>
+  
+          <strong>Premium Festival</strong> – IDR 3,500,000<br>
+          Free standing area closest to the stage, early entry, exclusive wristband.<br><br>
+  
+          <strong>VIP A</strong> – IDR 3,200,000<br>
+          Seated section with direct center view, fast-track entry access.<br><br>
+  
+          <strong>VIP B</strong> – IDR 2,800,000<br>
+          Seated section on the left/right sides of the stage, close to the action.<br><br>
+  
+          <strong>Platinum</strong> – IDR 2,200,000<br>
+          Strategic seated area with great stage view, special gate access.<br><br>
+  
+          <strong>Gold</strong> – IDR 1,800,000<br>
+          Middle-back seated area, spacious and comfortable.<br><br>
+  
+          <strong>Blue</strong> – IDR 1,200,000<br>
+          Upper tier seating, perfect for those who want to enjoy the show affordably.<br><br>
+  
+          <strong>Green</strong> – IDR 850,000<br>
+          Highest tier seats, most budget-friendly, ideal for students.<br>
+        </p>
+  
+        <div class="mt-4">
+          <a href="#ticket" class="inline-block bg-red-900 hover:bg-red-700 text-white px-4 py-2 rounded">Get Ticket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+  <footer class="bg-neutral-700 text-white py-10">
+    <div class="container mx-auto flex justify-between">
+        <div class="w-1/3">
+            <h3 class="text-lg font-bold">Ticketin</h3>
+            <p class="mt-2 text-sm">Ticketin is your ultimate stop for concert tickets — <br> made by fans, for fans. Let's make memories together.</p>
+        </div>
+        <div class="w-1/3">
+            <h3 class="text-lg font-bold">Links</h3>
+            <ul class="mt-2">
+                <li><a href="#hero" class="text-sm hover:underline">Home</a></li>
+                <li><a href="#event" class="text-sm hover:underline">Event</a></li>
+                <li><a href="#tour" class="text-sm hover:underline">Schedule</a></li>
+                <li><a href="#ticket" class="text-sm hover:underline">Get Ticket</a></li>
+            </ul>
+        </div>
+        <div class="w-1/3">
+            <h3 class="text-lg font-bold">Contact Us</h3>
+            <p class="mt-2 text-sm">Sebastian Stan, New York, AS 756,<br>United States of America.</p>
+            <p class="mt-2 text-sm">ticketin.support@gmail.com</p>
+            <p class="mt-2 text-sm">+9796 6776 236</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
